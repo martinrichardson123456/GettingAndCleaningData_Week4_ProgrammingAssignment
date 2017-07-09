@@ -4,7 +4,7 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
-__SOURCE OF RAW DATA 
+__SOURCE OF RAW DATA__ 
 
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -20,7 +20,7 @@ This is the only user-defined part of the file paths in the commands that follow
 
 #################################################
 
-__PRELIMINARY COMMANDS BEFORE 'run-analysis()' FUNCTION CALL
+__PRELIMINARY COMMANDS BEFORE 'run-analysis()' FUNCTION CALL__
 
 Execute the following commands before using the run_analysis function:
 
@@ -48,7 +48,7 @@ subject_test    <- read.table("./FUCI_dataset/UCI HAR Dataset/test/subject_test.
 
 #################################################
 
-__FUNCTION CALL: 'run_analysis()'
+__FUNCTION CALL: 'run_analysis()'__
 
 One may then execute the following commands:
 
@@ -64,7 +64,7 @@ run_analysis(train_dataset = train_dataset, test_dataset = test_dataset,
 
 #################################################
 
-__ASSIGNMENT INSTRUCTIONS:
+__ASSIGNMENT INSTRUCTIONS:__
 
  You should create one R script called run_analysis.R that does the following:
 
@@ -79,7 +79,7 @@ __ASSIGNMENT INSTRUCTIONS:
 
 #################################################
 
-__DESCRIPTION OF "run_analysis.R" SCRIPT
+__DESCRIPTION OF "run_analysis.R" SCRIPT__
 
 The script contains comments describing what is happening at each step, but to summarize:
 
