@@ -1,15 +1,9 @@
 # GettingAndCleaningData_Week4_ProgrammingAssignment
 Programming assignment for week 4 of 'Getting and cleaning data' module on Coursera Data Science Specialization
 
-________________________________________________________________________________________
-
-
-
-
-_______________________________________________________________________________________
-
 
 #################################################
+
 ASSIGNMENT INSTRUCTIONS:
 
  You should create one R script called run_analysis.R that does the following.
