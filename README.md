@@ -12,7 +12,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 The name given to the .zip file linked to above was chosen to be "FUCI_dataset.zip", and when
 extracted, the contents are placed in within a newly-created directory named /FUCI_dataset. 
-This is the only user-defined part of the commands that follow.
+This is the only user-defined part of the file paths in the commands that follow.
 
 
 
