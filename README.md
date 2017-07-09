@@ -4,21 +4,6 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
-ASSIGNMENT INSTRUCTIONS:
-
- You should create one R script called run_analysis.R that does the following.
-
- 1. Merges the training and the test sets to create one data set.
- 2. Extracts only the measurements on the mean and standard deviation for each measurement.
- 3. Uses descriptive activity names to name the activities in the data set
- 4. Appropriately labels the data set with descriptive variable names.
- 5. From the data set in step 4, creates a second, independent tidy data set with the
-    average of each variable for each activity and each subject.
-
-
-
-#################################################
-
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -64,6 +49,51 @@ One may then execute the following commands:
 source("run_analysis.R")
 
 run_analysis(train_dataset = train_dataset, test_dataset = test_dataset, 
-              features = features, y_train = y_train, y_test = y_test, 
-              activity_labels = activity_labels, subject_train = subject_train, 
-              subject_test = subject_test)
+             features = features, y_train = y_train, y_test = y_test, 
+             activity_labels = activity_labels, subject_train = subject_train, 
+             subject_test = subject_test)
+
+
+
+
+#################################################
+
+ASSIGNMENT INSTRUCTIONS:
+
+ You should create one R script called run_analysis.R that does the following:
+
+ 1. Merges the training and the test sets to create one data set.
+ 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+ 3. Uses descriptive activity names to name the activities in the data set.
+ 4. Appropriately labels the data set with descriptive variable names.
+ 5. From the data set in step 4, creates a second, independent tidy data set with the
+    average of each variable for each activity and each subject.
+
+
+
+#################################################
+
+DESCRIPTION OF "run_analysis.R" SCRIPT
+
+The script contains comments describing what is happening at each step, but to summarize:
+
+- The data is split into two groups of study volunteers - the 'test' group and the 'train' group.
+
+- The function 'run_analysis()' takes as arguments the two large raw data sets, which are referred to above 
+  (and in the script) as 'train_dataset' and 'test_dataset'.
+
+- Neither one of these data sets have descriptive column names; they are V1, V2, ..., V561. The columns for
+  these data sets have descriptive names applied to them, which are found in the 'features.txt' file, whose 
+  contents is stored under the 'features' argument (mentioned above) passed to the 'run_analysis()' function.
+  
+- These two data sets are then combined together, with the rows for the 'train' group first, followed by the
+  rows for the 'test' group.
+
+
+
+
+
+
+
+
+
