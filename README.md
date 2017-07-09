@@ -4,7 +4,7 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
-SOURCE OF RAW DATA 
+##SOURCE OF RAW DATA 
 
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
