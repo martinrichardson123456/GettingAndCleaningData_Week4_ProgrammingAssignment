@@ -115,12 +115,32 @@ The script contains comments describing what is happening at each step, but to s
   converted to the corresponding character strings (walking, sitting etc.). 
   [This fulfils part 3 of the assignment instructions stated above.]
   
-- A new data frame is then created, for which the values in the first column are the subject ID numbers, and 
-  the second column is the named activities discussed in the previous paragraph, and the columns that follow
-  are those that contain 'mean()' or 'std()' measurements. The first two columns of this data frame are then
-  given appropriate descriptive names.
+- A new data frame is then created (named in the script as 'df_combined'), for which the values in the first 
+  column are the subject ID numbers, and the second column is the named activities discussed in the previous 
+  paragraph, and the columns that follow are those that contain 'mean()' or 'std()' measurements. The first 
+  two columns of this data frame are then given appropriate descriptive names.
   
+- The data frame for the final output is then instantiated (named in the script as 'df_final'). A for-loop is
+  then opened, which loops over subject ID numbers 1 to 30. In each new cycle through this loop, a new copy
+  of 'df_combined' (mentioned in the previous paragraph) is instantiated (an error occurs if 'df_combined'
+  only appears before the for-loop). The rows of this data frame for which the subject ID number matches the 
+  for-loop index (1-30) are extracted and the rest discared.
   
+- A nested for-loop appears, this time to loop over each of the 6 activities. For each activity, a subset of 
+  the data frame created in the previous paragraph is isolated, and the mean value is calculated for each 
+  column (except the  subject ID number and the activity columns) via another nested for-looped. Each column 
+  mean is added to a vector named 'variable_means_row'. At the end of each pass through the loop, a new row 
+  containing subject ID, activity and the contents of 'variable_means_row' is created, and added onto the 
+  'df_final' output data frame.
+  [This fulfils part 5 of the assignment instructions stated above.]
+  
+- The result is the final data frame. The first two columns contain the variables 'Subject ID' numbers and 
+  'Activity', then the rest of the columns contain the means of the various requested quantities. The names 
+  of these columns are modified slightly with the prefix "Mean of ", just to distinguish them from the 
+  original raw data. 
+  
+- This final data fram is tidy. All of the columns correspond only to variables. Also all of the rows contain 
+  only observations. Also multiple types of observational unit are not stored in this table. 
   
   
 
