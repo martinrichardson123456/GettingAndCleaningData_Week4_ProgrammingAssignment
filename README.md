@@ -4,6 +4,8 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
+SOURCE OF RAW DATA 
+
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -17,6 +19,8 @@ This is the only user-defined part of the file paths in the commands that follow
 
 
 #################################################
+
+PRELIMINARY COMMANDS BEFORE 'run-analysis()' FUNCTION CALL
 
 Execute the following commands before using the run_analysis function:
 
@@ -43,6 +47,8 @@ subject_test    <- read.table("./FUCI_dataset/UCI HAR Dataset/test/subject_test.
 
 
 #################################################
+
+FUNCTION CALL: 'run_analysis()'
 
 One may then execute the following commands:
 
