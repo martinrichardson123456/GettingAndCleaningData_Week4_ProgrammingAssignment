@@ -110,9 +110,12 @@ The script contains comments describing what is happening at each step, but to s
 - However, the file 'activity_labels.txt' associates an integer between 1 and 6 with each of the 6 activities 
   (in the order they appeared earlier in this paragraph). A new column whose values are integers between 1 and
   6 is created by combining the contents of 'y_train' and 'y_test' (mentioned above). These numbers are then
-  converted to the corresponding character strings (walking, sitting etc.) 
+  converted to the corresponding character strings (walking, sitting etc.). 
   
-  
+- A new data frame is then created, for which the values in the first column are the subject ID numbers, and 
+  the second column is the named activities discussed in the previous paragraph, and the columns that follow
+  are those that contain 'mean()' or 'std()' measurements. The first two columns of this data frame are then
+  given appropriate descriptive names.
   
   
   
