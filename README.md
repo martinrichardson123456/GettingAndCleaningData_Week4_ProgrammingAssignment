@@ -80,7 +80,7 @@ The script contains comments describing what is happening at each step, but to s
 - The data is split into two groups of study volunteers - the 'test' group and the 'train' group.
 
 - The function 'run_analysis()' takes as arguments the two large raw data sets, which are referred to above 
-  (and in the script) as 'train_dataset' and 'test_dataset'.
+  (and in the script) as 'train_dataset' and 'test_dataset' (the specific file paths are shown above).
 
 - Neither one of these data sets have descriptive column names; they are V1, V2, ..., V561. The columns for
   these data sets have descriptive names applied to them, which are found in the 'features.txt' file, whose 
