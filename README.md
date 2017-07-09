@@ -93,8 +93,16 @@ The script contains comments describing what is happening at each step, but to s
 - This assignment is only interested in measurements of the means and standard deviations of the various 
   quantities recorded in the study. Since the columns/variables now have descriptive names rather than V1, V2 
   and so on, any columns whose name features the string 'mean()' or 'std()' are extracted and stored in 
-  separate data frames (the rest of the columns are discarded).
+  separate data frames (the rest of the columns are discarded). [This fulfils part 3 of the assignment 
+  instructions stated above.]
   
+- Each volunteer/subject is given an ID number; since there are 30 subjects, this ranges from 1, 2, ..., 30.
+  There were 21 subjects in the 'train' group and 9 in the 'test' group. The corresponding subject ID numbers
+  for each are stored in the 'subject_train' and 'subject_test' arguments mentioned above. The script 
+  combines these into a single column, with all the subject ID numbers for the 'train' group appearing first,
+  followed by those for the 'test' group.
+  
+- 
   
 
 
