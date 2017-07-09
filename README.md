@@ -4,6 +4,9 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
+
+
+
 __SOURCE OF RAW DATA__ 
 
 The raw data is found here:
