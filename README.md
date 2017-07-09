@@ -137,10 +137,13 @@ The script contains comments describing what is happening at each step, but to s
 - The result is the final data frame. The first two columns contain the variables 'Subject ID' numbers and 
   'Activity', then the rest of the columns contain the means of the various requested quantities. The names 
   of these columns are modified slightly with the prefix "Mean of ", just to distinguish them from the 
-  original raw data. 
+  original raw data. Finally the output is written out as "Week_4_output_table.txt".
   
-- This final data fram is tidy. All of the columns correspond only to variables. Also all of the rows contain 
-  only observations. Also multiple types of observational unit are not stored in this table. 
+- This final data frame is tidy. All of the columns correspond only to variables (the activity is treated as
+  a qualitative variable). Also all of the rows contain only observations - which activity was happening, 
+  followed by what the accelerometers and gyroscopes recorded. Also multiple types of observational unit are 
+  not stored in this table either; there is one row for each subject activity, rather than say, two rows for
+  a given subject ID and activity, one for 'mean()' and one for 'std()'. 
   
   
 
