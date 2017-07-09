@@ -16,6 +16,7 @@ ASSIGNMENT INSTRUCTIONS:
     average of each variable for each activity and each subject.
 
 #################################################
+
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -27,6 +28,7 @@ extracted, the contents are placed in within a newly-created directory named /FU
 This is the only user-defined part of the commands that follow.
 
 #################################################
+
 Execute the following commands before using the run_analysis function:
 
 setwd( <the directory where the /FUCI_dataset directory mentioned above lives> )
@@ -34,12 +36,19 @@ setwd( <the directory where the /FUCI_dataset directory mentioned above lives> )
 library(dplyr)
 
 train_dataset   <- read.table("./FUCI_dataset/UCI HAR Dataset/train/X_train.txt")
+
 test_dataset    <- read.table("./FUCI_dataset/UCI HAR Dataset/test/X_test.txt")
+
 features        <- read.table("./FUCI_dataset/UCI HAR Dataset/features.txt")
+
 activity_labels <- read.table("./FUCI_dataset/UCI HAR Dataset/activity_labels.txt")
+
 y_train         <- read.table("./FUCI_dataset/UCI HAR Dataset/train/y_train.txt")
+
 y_test          <- read.table("./FUCI_dataset/UCI HAR Dataset/test/y_test.txt")
+
 subject_train   <- read.table("./FUCI_dataset/UCI HAR Dataset/train/subject_train.txt")
+
 subject_test    <- read.table("./FUCI_dataset/UCI HAR Dataset/test/subject_test.txt")
 
 #################################################
