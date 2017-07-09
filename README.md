@@ -7,7 +7,7 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 The raw data is found here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-The full description of the raw data made by those who recorded the data is found here:
+The full description of the study is found here:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The name given to the .zip file linked to above was chosen to be "FUCI_dataset.zip", and when
@@ -102,7 +102,20 @@ The script contains comments describing what is happening at each step, but to s
   combines these into a single column, with all the subject ID numbers for the 'train' group appearing first,
   followed by those for the 'test' group.
   
-- 
+- Data was recorded whilst the subjects participated in six activities (walking, walking up stairs, walking 
+  down stairs, sitting, standing and laying). Each row of the raw data corresponds to measurements recorded 
+  whilst the subject does one of these activities, but the main data sets ('train_dataset' and 'test_dataset')
+  do not contain a column indicating which activity is being performed for a given row. 
+  
+- However, the file 'activity_labels.txt' associates an integer between 1 and 6 with each of the 6 activities 
+  (in the order they appeared earlier in this paragraph). A new column whose values are integers between 1 and
+  6 is created by combining the contents of 'y_train' and 'y_test' (mentioned above). These numbers are then
+  converted to the corresponding character strings (walking, sitting etc.) 
+  
+  
+  
+  
+  
   
 
 
