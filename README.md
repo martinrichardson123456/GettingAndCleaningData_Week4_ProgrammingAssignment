@@ -85,16 +85,18 @@ The script contains comments describing what is happening at each step, but to s
 - Neither one of these data sets have descriptive column names; they are V1, V2, ..., V561. The columns for
   these data sets have descriptive names applied to them, which are found in the 'features.txt' file, whose 
   contents is stored under the 'features' argument (mentioned above) passed to the 'run_analysis()' function.
-  [This fulfils part 4 of the assignment instructions stated above.]
+  [This almost entirely fulfils part 4 of the assignment instructions stated above, although some minor 
+  additions to completely fulfil this requirement are made later.]
   
 - These two data sets are then combined together, with the rows for the 'train' group first, followed by the
-  rows for the 'test' group. [This fulfils part 1 of the assignment instructions stated above.]
+  rows for the 'test' group. 
+  [This fulfils part 1 of the assignment instructions stated above.]
   
 - This assignment is only interested in measurements of the means and standard deviations of the various 
   quantities recorded in the study. Since the columns/variables now have descriptive names rather than V1, V2 
   and so on, any columns whose name features the string 'mean()' or 'std()' are extracted and stored in 
-  separate data frames (the rest of the columns are discarded). [This fulfils part 3 of the assignment 
-  instructions stated above.]
+  separate data frames (the rest of the columns are discarded). 
+  [This fulfils part 2 of the assignment instructions stated above.]
   
 - Each volunteer/subject is given an ID number; since there are 30 subjects, this ranges from 1, 2, ..., 30.
   There were 21 subjects in the 'train' group and 9 in the 'test' group. The corresponding subject ID numbers
@@ -111,6 +113,7 @@ The script contains comments describing what is happening at each step, but to s
   (in the order they appeared earlier in this paragraph). A new column whose values are integers between 1 and
   6 is created by combining the contents of 'y_train' and 'y_test' (mentioned above). These numbers are then
   converted to the corresponding character strings (walking, sitting etc.). 
+  [This fulfils part 3 of the assignment instructions stated above.]
   
 - A new data frame is then created, for which the values in the first column are the subject ID numbers, and 
   the second column is the named activities discussed in the previous paragraph, and the columns that follow
