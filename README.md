@@ -20,7 +20,7 @@ This is the only user-defined part of the commands that follow.
 
 Execute the following commands before using the run_analysis function:
 
-setwd( <the directory where the /FUCI_dataset directory mentioned above lives> )
+setwd( <the directory where the '.../FUCI_dataset' directory mentioned above lives> )
 
 library(dplyr)
 
@@ -85,12 +85,17 @@ The script contains comments describing what is happening at each step, but to s
 - Neither one of these data sets have descriptive column names; they are V1, V2, ..., V561. The columns for
   these data sets have descriptive names applied to them, which are found in the 'features.txt' file, whose 
   contents is stored under the 'features' argument (mentioned above) passed to the 'run_analysis()' function.
+  [This fulfils part 4 of the assignment instructions stated above.]
   
 - These two data sets are then combined together, with the rows for the 'train' group first, followed by the
-  rows for the 'test' group.
-
-
-
+  rows for the 'test' group. [This fulfils part 1 of the assignment instructions stated above.]
+  
+- This assignment is only interested in measurements of the means and standard deviations of the various 
+  quantities recorded in the study. Since the columns/variables now have descriptive names rather than V1, V2 
+  and so on, any columns whose name features the string 'mean()' or 'std()' are extracted and stored in 
+  separate data frames (the rest of the columns are discarded).
+  
+  
 
 
 
