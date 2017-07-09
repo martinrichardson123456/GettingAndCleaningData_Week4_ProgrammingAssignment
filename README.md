@@ -15,6 +15,8 @@ ASSIGNMENT INSTRUCTIONS:
  5. From the data set in step 4, creates a second, independent tidy data set with the
     average of each variable for each activity and each subject.
 
+
+
 #################################################
 
 The raw data is found here:
@@ -26,6 +28,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The name given to the .zip file linked to above was chosen to be "FUCI_dataset.zip", and when
 extracted, the contents are placed in within a newly-created directory named /FUCI_dataset. 
 This is the only user-defined part of the commands that follow.
+
+
 
 #################################################
 
@@ -51,10 +55,15 @@ subject_train   <- read.table("./FUCI_dataset/UCI HAR Dataset/train/subject_trai
 
 subject_test    <- read.table("./FUCI_dataset/UCI HAR Dataset/test/subject_test.txt")
 
+
+
 #################################################
-# Execute the following command:
-#
-# run_analysis(train_dataset = train_dataset, test_dataset = test_dataset, 
-#              features = features, y_train = y_train, y_test = y_test, 
-#              activity_labels = activity_labels, subject_train = subject_train, 
-#              subject_test = subject_test)
+
+One may then execute the following commands:
+
+source("run_analysis.R")
+
+run_analysis(train_dataset = train_dataset, test_dataset = test_dataset, 
+              features = features, y_train = y_train, y_test = y_test, 
+              activity_labels = activity_labels, subject_train = subject_train, 
+              subject_test = subject_test)
