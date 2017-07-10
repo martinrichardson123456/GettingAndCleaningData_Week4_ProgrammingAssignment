@@ -151,10 +151,11 @@ The script contains comments describing what is happening at each step, but to s
   'df_final' output data frame.
   [This fulfils part 5 of the assignment instructions stated above.]
   
-- The result is the final data frame. The first two columns contain the variables 'Subject ID' numbers and 
-  'Activity', then the rest of the columns contain the means of the various requested quantities. The names 
-  of these columns are modified slightly with the prefix "Mean of ", just to distinguish them from the 
-  original raw data. Finally the output is written out as "Week_4_output_table.txt".
+- The result is the final data frame containing the expected 180 rows; 30 volunteers * 6 activities. The first 
+  two columns contain the variables 'Subject ID' numbers and 'Activity', then the rest of the columns contain 
+  the means of the various requested quantities. The names of these columns are modified slightly with the 
+  prefix "Mean of ", just to distinguish them from the original raw data. Finally the output is written out as    
+  "Week_4_output_table.txt".
   
 - This final data frame is tidy. All of the columns correspond only to variables (the activity is treated as
   a qualitative variable). Also all of the rows contain only observations - which activity was happening, 
