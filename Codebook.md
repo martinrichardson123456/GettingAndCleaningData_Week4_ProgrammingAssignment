@@ -2,11 +2,11 @@ __Code Book__
 
 *The variables that correspond to each column found in "Week_4_output_table.txt" are as follows*
 
-"Subject ID"                              
+1) "Subject ID"                              
 - The unique identifier given to each of the 30 volunteers
 
-- Activity - The type of physical activity the volunteer is participating in for a given observation
-6
+2) Activity - The type of physical activity the volunteer is participating in for a given observation
+
 LAYING
 SITTING
 STANDING
@@ -15,8 +15,14 @@ WALKING_DOWNSTAIRS
 WALKING_UPSTAIRS
 
 
-In the raw data, since so many (561) variables were recorded and each variable has a number of aspects to it, they follow an abbreviated naming convention to save space. Signals were recorded from smartphone accelerometers and gyroscopes. 
+3 - 81)
+In the raw data, signals were recorded from smartphone accelerometers and gyroscopes. Since so many (561) variables were recorded and each variable has a number of aspects to it, they follow an abbreviated naming convention. 
 
+The prefix 't' indicates a time-domain signal. The prefix 'f' indicates a frequency-domain signal (Fourier transform of signal).
+
+Acceleration signals were separated into 'body' and 'gravity' components, so this is indicated by either ...Body... or ...Gravity... in the variable name.
+
+Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of ...Acc... or ...Gyro... in the variable name.
 
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
