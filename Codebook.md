@@ -18,14 +18,24 @@ WALKING_UPSTAIRS
 3 - 81)
 In the raw data, signals were recorded from smartphone accelerometers and gyroscopes. Since so many (561) variables were recorded and each variable has a number of aspects to it, they follow an abbreviated naming convention. 
 
-The prefix 't' indicates a time-domain signal. The prefix 'f' indicates a frequency-domain signal (Fourier transform of signal).
+The prefix 't' indicates a time-domain signal. The prefix 'f' indicates a frequency-domain signal, as discussed lower down.
 
-Acceleration signals were separated into 'body' and 'gravity' components, so this is indicated by either ...Body... or ...Gravity... in the variable name.
+Acceleration signals were separated into 'body' and 'gravity' components, so this is indicated by either '-Body-' or '-Gravity-' in the variable name.
 
-Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of ...Acc... or ...Gyro... in the variable name.
-
+Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of '-Acc-' or '-Gyro-' in the variable name.
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+
+- The magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+- A Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
+
+- Mean values of the quantities stated in the raw data are indicated by '-mean()-'.
+
+- Standard deviations of the quantities stated in the raw data are indicated by '-std()-'.
+
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -44,18 +54,6 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
-
-The signals are 3-axial, denoted by XYZ.
-
-
-
-
-The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
-
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
-
-Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
-
 
 
 
@@ -224,27 +222,6 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 
 
-
-The set of variables that were estimated from these signals are: 
-
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
-
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 gravityMean
@@ -253,4 +230,3 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-The complete list of variables of each feature vector is available in 'features.txt'
