@@ -75,7 +75,7 @@ run_analysis(train_dataset = train_dataset, test_dataset = test_dataset,
 
 #################################################
 
-__ASSIGNMENT INSTRUCTIONS:__
+__ASSIGNMENT INSTRUCTIONS__
 
  You should create one R script called run_analysis.R that does the following:
 
@@ -161,11 +161,3 @@ The script contains comments describing what is happening at each step, but to s
   followed by what the accelerometers and gyroscopes recorded. Also multiple types of observational unit are 
   not stored in this table either; there is one row for each subject activity, rather than say, two rows for
   a given subject ID and activity, one for 'mean()' and one for 'std()'. 
-  
-  
-
-
-
-
-
-
