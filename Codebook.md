@@ -8,7 +8,7 @@ __Code Book__
 
 2) Activity - The type of physical activity the volunteer is participating in for a given observation:
 
-1 - WALKING, 
+    1 - WALKING, 
 
 2 - WALKING_UPSTAIRS
 
