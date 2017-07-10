@@ -193,18 +193,4 @@ In the raw data, signals were recorded from smartphone accelerometers and gyrosc
 
 "Mean of fBodyBodyGyroMag-std()"         
 
-"Mean of fBodyBodyGyroJerkMag-std()
-
-
-
-
-
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
+"Mean of fBodyBodyGyroJerkMag-std()"
