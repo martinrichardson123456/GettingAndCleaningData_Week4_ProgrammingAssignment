@@ -4,9 +4,6 @@ Programming assignment for week 4 of 'Getting and cleaning data' module on Cours
 
 #################################################
 
-
-
-
 __SOURCE OF RAW DATA__ 
 
 The raw data is found here:
@@ -19,6 +16,17 @@ The name given to the .zip file linked to above was chosen to be "FUCI_dataset.z
 extracted, the contents are placed in within a newly-created directory named /FUCI_dataset. 
 This is the only user-defined part of the file paths in the commands that follow.
 
+
+#################################################
+
+__DESCRIPTION OF OBSERVATIONS__
+
+For each record in the dataset it is provided:
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope.
+- A 561-feature vector with time and frequency domain variables.
+- Its activity label.
+- An identifier of the subject who carried out the experiment. 
 
 
 #################################################
