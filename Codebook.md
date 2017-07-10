@@ -44,10 +44,9 @@ In the raw data, signals were recorded from smartphone accelerometers and gyrosc
 
 - The "Mean of " prefix that appears before every quantitative variable in 'Week_4_output_table.txt' is to distinguish these variables from the raw data, since these columns contain mean values for the numerous 50 Hz signal measurements.
 
-________________________________________________________________________________________________
 
-The variable names are as follows:
 
+Each variable name can thus be understood. The full list of variable names are as follows:
 
 "Mean of tBodyAcc-mean()-X"               
 
