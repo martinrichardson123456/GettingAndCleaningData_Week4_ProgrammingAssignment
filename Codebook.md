@@ -4,15 +4,13 @@ __Code Book__
 
 1) "Subject ID" - The unique identifier given to each of the 30 volunteers
 
-2) Activity - The type of physical activity the volunteer is participating in for a given observation
-
-LAYING
-SITTING
-STANDING
-WALKING
-WALKING_DOWNSTAIRS
-WALKING_UPSTAIRS
-
+2) Activity - The type of physical activity the volunteer is participating in for a given observation:
+ 1 WALKING, 
+ 2 WALKING_UPSTAIRS
+ 3 WALKING_DOWNSTAIRS
+ 4 SITTING
+ 5 STANDING
+ 6 LAYING
 
 3 - 81)
 
