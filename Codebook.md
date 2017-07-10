@@ -4,7 +4,7 @@ The variables that correspond to each column found in "Week_4_output_table.txt" 
 
 - Subject ID 
 1
-- The unique identifier given to each of the 30 volunteers
+
 
 - Activity - The type of physical activity the volunteer is participating in for a given observation
 6
@@ -16,46 +16,168 @@ WALKING_DOWNSTAIRS
 WALKING_UPSTAIRS
 
 
-"Subject ID"                              "Activity"                               
-"Mean of tBodyAcc-mean()-X"               "Mean of tBodyAcc-mean()-Y"              
-"Mean of tBodyAcc-mean()-Z"               "Mean of tGravityAcc-mean()-X"           
-"Mean of tGravityAcc-mean()-Y"            "Mean of tGravityAcc-mean()-Z"           
-"Mean of tBodyAccJerk-mean()-X"           "Mean of tBodyAccJerk-mean()-Y"          
-"Mean of tBodyAccJerk-mean()-Z"           "Mean of tBodyGyro-mean()-X"             
-"Mean of tBodyGyro-mean()-Y"              "Mean of tBodyGyro-mean()-Z"             
-"Mean of tBodyGyroJerk-mean()-X"          "Mean of tBodyGyroJerk-mean()-Y"         
-"Mean of tBodyGyroJerk-mean()-Z"          "Mean of tBodyAccMag-mean()"             
-"Mean of tGravityAccMag-mean()"           "Mean of tBodyAccJerkMag-mean()"         
-"Mean of tBodyGyroMag-mean()"             "Mean of tBodyGyroJerkMag-mean()"        
-"Mean of fBodyAcc-mean()-X"               "Mean of fBodyAcc-mean()-Y"              
-"Mean of fBodyAcc-mean()-Z"               "Mean of fBodyAcc-meanFreq()-X"          
-"Mean of fBodyAcc-meanFreq()-Y"           "Mean of fBodyAcc-meanFreq()-Z"          
-"Mean of fBodyAccJerk-mean()-X"           "Mean of fBodyAccJerk-mean()-Y"          
-"Mean of fBodyAccJerk-mean()-Z"           "Mean of fBodyAccJerk-meanFreq()-X"      
-"Mean of fBodyAccJerk-meanFreq()-Y"       "Mean of fBodyAccJerk-meanFreq()-Z"      
-"Mean of fBodyGyro-mean()-X"              "Mean of fBodyGyro-mean()-Y"             
-"Mean of fBodyGyro-mean()-Z"              "Mean of fBodyGyro-meanFreq()-X"         
-"Mean of fBodyGyro-meanFreq()-Y"          "Mean of fBodyGyro-meanFreq()-Z"         
-"Mean of fBodyAccMag-mean()"              "Mean of fBodyAccMag-meanFreq()"         
-"Mean of fBodyBodyAccJerkMag-mean()"      "Mean of fBodyBodyAccJerkMag-meanFreq()" 
-"Mean of fBodyBodyGyroMag-mean()"         "Mean of fBodyBodyGyroMag-meanFreq()"    
-"Mean of fBodyBodyGyroJerkMag-mean()"     "Mean of fBodyBodyGyroJerkMag-meanFreq()"
-"Mean of tBodyAcc-std()-X"                "Mean of tBodyAcc-std()-Y"               
-"Mean of tBodyAcc-std()-Z"                "Mean of tGravityAcc-std()-X"            
-"Mean of tGravityAcc-std()-Y"             "Mean of tGravityAcc-std()-Z"            
-"Mean of tBodyAccJerk-std()-X"            "Mean of tBodyAccJerk-std()-Y"           
-"Mean of tBodyAccJerk-std()-Z"            "Mean of tBodyGyro-std()-X"              
-"Mean of tBodyGyro-std()-Y"               "Mean of tBodyGyro-std()-Z"              
-"Mean of tBodyGyroJerk-std()-X"           "Mean of tBodyGyroJerk-std()-Y"          
-"Mean of tBodyGyroJerk-std()-Z"           "Mean of tBodyAccMag-std()"              
-"Mean of tGravityAccMag-std()"            "Mean of tBodyAccJerkMag-std()"          
-"Mean of tBodyGyroMag-std()"              "Mean of tBodyGyroJerkMag-std()"         
-"Mean of fBodyAcc-std()-X"                "Mean of fBodyAcc-std()-Y"               
-"Mean of fBodyAcc-std()-Z"                "Mean of fBodyAccJerk-std()-X"           
-"Mean of fBodyAccJerk-std()-Y"            "Mean of fBodyAccJerk-std()-Z"           
-"Mean of fBodyGyro-std()-X"               "Mean of fBodyGyro-std()-Y"              
-"Mean of fBodyGyro-std()-Z"               "Mean of fBodyAccMag-std()"              
-"Mean of fBodyBodyAccJerkMag-std()"       "Mean of fBodyBodyGyroMag-std()"         
+"Subject ID"                              
+- The unique identifier given to each of the 30 volunteers
+
+
+"Activity"                               
+
+"Mean of tBodyAcc-mean()-X"               
+
+"Mean of tBodyAcc-mean()-Y"              
+
+"Mean of tBodyAcc-mean()-Z"               
+
+"Mean of tGravityAcc-mean()-X"           
+
+"Mean of tGravityAcc-mean()-Y"            
+
+"Mean of tGravityAcc-mean()-Z"           
+
+"Mean of tBodyAccJerk-mean()-X"           
+
+"Mean of tBodyAccJerk-mean()-Y"          
+
+"Mean of tBodyAccJerk-mean()-Z"           
+
+"Mean of tBodyGyro-mean()-X"             
+
+"Mean of tBodyGyro-mean()-Y"              
+
+"Mean of tBodyGyro-mean()-Z"             
+
+"Mean of tBodyGyroJerk-mean()-X"          
+
+"Mean of tBodyGyroJerk-mean()-Y"         
+
+"Mean of tBodyGyroJerk-mean()-Z"          
+
+"Mean of tBodyAccMag-mean()"             
+
+"Mean of tGravityAccMag-mean()"           
+
+"Mean of tBodyAccJerkMag-mean()"         
+
+"Mean of tBodyGyroMag-mean()"             
+
+"Mean of tBodyGyroJerkMag-mean()"        
+
+"Mean of fBodyAcc-mean()-X"               
+
+"Mean of fBodyAcc-mean()-Y"              
+
+"Mean of fBodyAcc-mean()-Z"               
+
+"Mean of fBodyAcc-meanFreq()-X"          
+
+"Mean of fBodyAcc-meanFreq()-Y"           
+
+"Mean of fBodyAcc-meanFreq()-Z"          
+
+"Mean of fBodyAccJerk-mean()-X"           
+
+"Mean of fBodyAccJerk-mean()-Y"          
+
+"Mean of fBodyAccJerk-mean()-Z"           
+
+"Mean of fBodyAccJerk-meanFreq()-X"      
+
+"Mean of fBodyAccJerk-meanFreq()-Y"       
+
+"Mean of fBodyAccJerk-meanFreq()-Z"      
+
+"Mean of fBodyGyro-mean()-X"              
+
+"Mean of fBodyGyro-mean()-Y"             
+
+"Mean of fBodyGyro-mean()-Z"              
+
+"Mean of fBodyGyro-meanFreq()-X"         
+
+"Mean of fBodyGyro-meanFreq()-Y"          
+
+"Mean of fBodyGyro-meanFreq()-Z"         
+
+"Mean of fBodyAccMag-mean()"              
+
+"Mean of fBodyAccMag-meanFreq()"         
+
+"Mean of fBodyBodyAccJerkMag-mean()"      
+
+"Mean of fBodyBodyAccJerkMag-meanFreq()" 
+
+"Mean of fBodyBodyGyroMag-mean()"         
+
+"Mean of fBodyBodyGyroMag-meanFreq()"    
+
+"Mean of fBodyBodyGyroJerkMag-mean()"     
+
+"Mean of fBodyBodyGyroJerkMag-meanFreq()"
+
+"Mean of tBodyAcc-std()-X"                
+
+"Mean of tBodyAcc-std()-Y"               
+
+"Mean of tBodyAcc-std()-Z"                
+
+"Mean of tGravityAcc-std()-X"            
+
+"Mean of tGravityAcc-std()-Y"             
+
+"Mean of tGravityAcc-std()-Z"            
+
+"Mean of tBodyAccJerk-std()-X"            
+
+"Mean of tBodyAccJerk-std()-Y"           
+
+"Mean of tBodyAccJerk-std()-Z"            
+
+"Mean of tBodyGyro-std()-X"              
+
+"Mean of tBodyGyro-std()-Y"               
+
+"Mean of tBodyGyro-std()-Z"              
+
+"Mean of tBodyGyroJerk-std()-X"           
+
+"Mean of tBodyGyroJerk-std()-Y"          
+
+"Mean of tBodyGyroJerk-std()-Z"           
+
+"Mean of tBodyAccMag-std()"              
+
+"Mean of tGravityAccMag-std()"            
+
+"Mean of tBodyAccJerkMag-std()"          
+
+"Mean of tBodyGyroMag-std()"              
+
+"Mean of tBodyGyroJerkMag-std()"         
+
+"Mean of fBodyAcc-std()-X"                
+
+"Mean of fBodyAcc-std()-Y"               
+
+"Mean of fBodyAcc-std()-Z"                
+
+"Mean of fBodyAccJerk-std()-X"           
+
+"Mean of fBodyAccJerk-std()-Y"            
+
+"Mean of fBodyAccJerk-std()-Z"           
+
+"Mean of fBodyGyro-std()-X"               
+
+"Mean of fBodyGyro-std()-Y"              
+
+"Mean of fBodyGyro-std()-Z"               
+
+"Mean of fBodyAccMag-std()"              
+
+"Mean of fBodyBodyAccJerkMag-std()"       
+
+"Mean of fBodyBodyGyroMag-std()"         
+
 "Mean of fBodyBodyGyroJerkMag-std()
 
 
