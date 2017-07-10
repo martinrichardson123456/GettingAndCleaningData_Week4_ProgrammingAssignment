@@ -46,7 +46,7 @@ In the raw data, signals were recorded from smartphone accelerometers and gyrosc
 
 
 
-Each variable name can thus be understood. The full list of quantitative variable names are as follows:
+Each variable name can thus be understood. The units of measurement are [CAN'T FIND THEM ANYWHERE BUT I DID INTEND TO INCLUDE THEM]. The full list of quantitative variable names are as follows:
 
 "Mean of tBodyAcc-mean()-X"               
 
