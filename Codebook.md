@@ -1,6 +1,6 @@
 __Code Book__
 
-*The variables that correspond to each column found in "Week_4_output_table.txt" are as follows*
+*The variables that correspond to each column found in "Week_4_output_table.txt", in order of appearance, are as follows...*
 
 1) "Subject ID" - The unique identifier given to each of the 30 volunteers
 
@@ -35,6 +35,12 @@ In the raw data, signals were recorded from smartphone accelerometers and gyrosc
 - Mean values of the quantities stated in the raw data are indicated by '-mean()-'.
 
 - Standard deviations of the quantities stated in the raw data are indicated by '-std()-'.
+
+- The "Mean of " prefix that appears before every quantitative variable in 'Week_4_output_table.txt' is to distinguish these variables from the raw data, since these columns contain mean values for the numerous 50 Hz signal measurements.
+
+________________________________________________________________________________________________
+
+The variable names are as follows:
 
 
 "Mean of tBodyAcc-mean()-X"               
