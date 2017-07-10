@@ -2,7 +2,8 @@ __Code Book__
 
 *The variables that correspond to each column found in "Week_4_output_table.txt", in order of appearance, are as follows...*
 
-1) "Subject ID" - The unique identifier given to each of the 30 volunteers
+1) "Subject ID"
+    The unique identifier given to each of the 30 volunteers
 
 2) Activity - The type of physical activity the volunteer is participating in for a given observation:
  1 WALKING, 
