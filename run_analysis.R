@@ -70,7 +70,6 @@ run_analysis <- function(train_dataset, test_dataset, features,
       # Pick out only the rows for which the value of the 'Subject ID' column matches
       # the current for-loop index i
       rows_for_this_id <- filter(df, df$Subject.ID == i)
-      print(paste("nrow(rows_for_this_id) =", nrow(rows_for_this_id)))
 
       # For the current subject, create a row for each of the 6 activities
       for(j in 1:6){
@@ -113,5 +112,7 @@ run_analysis <- function(train_dataset, test_dataset, features,
 
   # Save the result as a text file
   write.table(df_final, file = "Week_4_output_table.txt", row.names = FALSE)
+  
+  names(df_final)
   
 } # end of run_analysis()
