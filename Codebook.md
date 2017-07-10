@@ -2,8 +2,7 @@ __Code Book__
 
 *The variables that correspond to each column found in "Week_4_output_table.txt" are as follows*
 
-1) "Subject ID"                              
-- The unique identifier given to each of the 30 volunteers
+1) "Subject ID" - The unique identifier given to each of the 30 volunteers
 
 2) Activity - The type of physical activity the volunteer is participating in for a given observation
 
@@ -16,13 +15,14 @@ WALKING_UPSTAIRS
 
 
 3 - 81)
+
 In the raw data, signals were recorded from smartphone accelerometers and gyroscopes. Since so many (561) variables were recorded and each variable has a number of aspects to it, they follow an abbreviated naming convention. 
 
-The prefix 't' indicates a time-domain signal. The prefix 'f' indicates a frequency-domain signal, as discussed lower down.
+- The prefix 't' indicates a time-domain signal. The prefix 'f' indicates a frequency-domain signal, as discussed lower down.
 
-Acceleration signals were separated into 'body' and 'gravity' components, so this is indicated by either '-Body-' or '-Gravity-' in the variable name.
+- Acceleration signals were separated into 'body' and 'gravity' components, so this is indicated by either '-Body-' or '-Gravity-' in the variable name.
 
-Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of '-Acc-' or '-Gyro-' in the variable name.
+- Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of '-Acc-' or '-Gyro-' in the variable name.
 
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
@@ -36,28 +36,6 @@ The body linear acceleration and angular velocity were derived in time to obtain
 
 - Standard deviations of the quantities stated in the raw data are indicated by '-std()-'.
 
-
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
-
-
-
-"Activity"                               
 
 "Mean of tBodyAcc-mean()-X"               
 
