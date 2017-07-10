@@ -112,7 +112,5 @@ run_analysis <- function(train_dataset, test_dataset, features,
 
   # Save the result as a text file
   write.table(df_final, file = "Week_4_output_table.txt", row.names = FALSE)
-  
-  names(df_final)
-  
+    
 } # end of run_analysis()
