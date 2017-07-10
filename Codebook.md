@@ -24,7 +24,7 @@ In the raw data, signals were recorded from smartphone accelerometers and gyrosc
 
 - Whether the signal is from an accelerometer or a gyroscope is indicated by the presence of '-Acc-' or '-Gyro-' in the variable name.
 
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+- '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
 
